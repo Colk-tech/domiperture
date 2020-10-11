@@ -12,8 +12,9 @@ def start():
     building = environ_getter("USER_BUILDING", "USER_BUILDINGが設定されていません。")
     room_number = environ_getter("USER_ROOM_NUMBER", "USER_ROOM_NUMBERが設定されていません。")
     name = environ_getter("USER_NAME", "USER_NAMEが設定されていません。")
+    base_id = int(environ_getter("DISCORD_BASE_CHANNEL", "DISCORD_BASE_CHANNELが設定されていません。"))
 
     user_config = UserObject(url_template, building, room_number, name)
 
-    discord_client = MainClient(discord_token, user_config)
+    discord_client = MainClient(discord_token, base_id, user_config)
     discord_client.run()
