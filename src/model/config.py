@@ -1,7 +1,7 @@
 import random
 
 
-TEMPERATURE_RANGE = (36.1, 36.9)
+TEMPERATURE_RANGE = (36.1, 36.6)
 
 
 class UserObject:
