@@ -3,42 +3,42 @@
 
 
 
-## About
+## About	
 
-このプログラムは、Python上で動作する検温をサポートするためのDiscord BOTです。
+このプログラムは、Python上で動作する検温をサポートするためのDiscord BOTです。	
 
-`!url` と発言するか、決まった時間（デフォルトでは20時）になると、適当な平熱を生成して、エントリーを埋めた状態のGoogleFormsのURLが送信されます。
-
-
-
-### Futures
-
-#### 要望があれば実装します
-
-- [ ] 茨城高専以外のGoogleFormsにも対応する
-- [ ] 複数人サーバーでの利用を可能にする
+`!url` と発言するか、決まった時間（デフォルトでは20時）になると、適当な平熱を生成して、エントリーを埋めた状態のGoogleFormsのURLが送信されます。	
 
 
 
-### 環境構築
+### Futures	
 
-Pythonが動く環境であれば、動作するようになっています。
+#### 要望があれば実装します	
 
-まず、`requirements.txt` をインストールした後に、次の環境変数を設定することで使用可能になります。
-
-（`main.py`がエントリーポイントです）
-
+- [ ] 茨城高専以外のGoogleFormsにも対応する	
+- [ ] 複数人サーバーでの利用を可能にする	
 
 
-- `DISCORD_TOKEN` DiscordBOTのTOKEN。
 
-- `URL_TEMPLATE` 自動生成させたいURLのテンプレート。
+### 環境構築	
 
-  例: `https://colk.dev/{building}/{room_number}/{name}/{body_temperature}`
+Pythonが動く環境であれば、動作するようになっています。	
 
-- `USER_BUILDING` 自動入力する棟の名前。
+まず、`requirements.txt` をインストールした後に、次の環境変数を設定することで使用可能になります。	
 
-- `USER_NAME` 自動入力する氏名。
+（`main.py`がエントリーポイントです）	
 
-- `USER_ROOM_NUMBER` 自動入力する部屋番号。
+
+
+- `DISCORD_TOKEN` DiscordBOTのTOKEN。	
+
+- `URL_TEMPLATE` 自動生成させたいURLのテンプレート。	
+
+  例: `https://colk.dev/{building}/{room_number}/{name}/{body_temperature}`	
+
+- `USER_BUILDING` 自動入力する棟の名前。	
+
+- `USER_NAME` 自動入力する氏名。	
+
+- `USER_ROOM_NUMBER` 自動入力する部屋番号。	
 
